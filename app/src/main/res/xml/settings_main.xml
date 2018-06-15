@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/settings_title">
+
+    <!--Query or Topic will be Text entered by the user-->
+    <EditTextPreference
+        android:defaultValue="@string/query_default"
+        android:inputType="text"
+        android:key="@string/query_key"
+        android:selectAllOnFocus="true"
+        android:title="@string/query_label" />
+
+    <!--Order by will be a radio button to choose from-->
+    <ListPreference
+        android:defaultValue="@string/order_by_default"
+        android:entries="@array/order_by_labels"
+        android:entryValues="@array/order_by_values"
+        android:key="@string/order_by_key"
+        android:title="@string/order_by_label" />
+
+</PreferenceScreen>
